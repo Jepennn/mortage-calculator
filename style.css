@@ -1,0 +1,177 @@
+
+/*This project implements mobil first design*/
+
+
+/*Global styles*/
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.root{
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f0f0;
+    font-family: Plus Jakarta Sans;
+    height: 100vh;
+    width: 100vw;
+} 
+
+p{
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+label{
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.65);
+    width: 100%;
+}
+
+#text-form label, #radio-form label:nth-child(1){
+    margin-bottom: 10px;
+}
+
+/* Setting upp label and radio button in the same line */
+.number-label{
+    display: block;
+}
+
+
+/*Design for white container start hear*/
+
+.white-container{
+    flex-basis: 50%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 15px 20px 15px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#heading{
+    flex-basis: 25%;
+}
+
+.white-container h3{
+    font-size: 1.5rem;
+    color: rgb(14, 38, 63);
+    margin-bottom: 5px;
+}
+
+#clearAll{
+    color: rgba(0, 0, 0, 0.65);
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+#data-form{
+    flex-basis: 75%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#text-form{
+    display: flex;
+    flex-direction: column;
+}
+
+#text-form div{
+    margin-bottom: 20px;
+}
+
+
+input[type="text"]{
+    position: relative;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding-left: 5px;
+    width: 100%;
+}
+
+#radio-form{
+    flex-basis: 40%;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+#radio-form div{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+}
+
+#radio-form input[type="radio"]{
+    margin: 10px;
+}
+
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(182, 191, 46);
+    border-radius: 20px ;
+    border: none;
+    height: 40px;
+    width: 100%;
+    margin: 15px 0 15px 0;
+}
+
+button:hover{
+    background-color: rgb(182, 191, 46, 0.8);
+}
+
+button p{
+    color: rgb(14, 38, 63);
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+
+
+/*Design for blue container starts hear*/
+
+.blue-container{
+    background-color: rgba(14, 38, 63, 0.90);
+    padding: 20px 15px;
+    color: white;
+    flex-basis: 50%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blue-container p{
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.result-card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgb(14, 38, 63);
+    border-top:rgb(182, 191, 46) 4px solid;
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.result-card p{
+    padding-bottom: 10px;
+}
+
+.result-card h1{
+    color: rgb(182, 191, 46);
+}
