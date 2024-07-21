@@ -12,6 +12,7 @@
 
 .root{
     display: flex;
+
     flex-direction: column;
     background-color: #f0f0f0;
     font-family: Plus Jakarta Sans;
@@ -45,8 +46,7 @@ label{
 .white-container{
     flex-basis: 50%;
     background-color: rgb(255, 255, 255);
-    padding: 20px 15px 20px 15px;
-
+    padding: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -78,12 +78,12 @@ label{
     display: flex;
     flex-direction: column;
 }
-
 #text-form div{
     margin-bottom: 20px;
 }
-
-
+#text-form input:hover{
+    border: rgb(0, 0, 0) 2px solid;
+}
 input[type="text"]{
     position: relative;
     height: 40px;
@@ -100,7 +100,6 @@ input[type="text"]{
     flex-direction: column;
 
 }
-
 #radio-form div{
     border: 1px solid rgba(0, 0, 0, 0.8);
     border-radius: 5px;
@@ -111,9 +110,13 @@ input[type="text"]{
     display: flex;
     align-items: center;
 }
-
+#radio-form div:hover{
+    border: rgb(182, 191, 46) 2px solid;
+    background-color: rgba(182, 191, 46, 0.1);
+}
 #radio-form input[type="radio"]{
     margin: 10px;
+    color: rgb(182, 191, 46);
 }
 
 
@@ -142,25 +145,41 @@ button p{
 
 
 /*Design for blue container starts hear*/
-
-.blue-container{
+#blue-container{
     background-color: rgba(14, 38, 63, 0.90);
-    padding: 20px 15px;
+    padding: 20px;
     color: white;
     flex-basis: 50%;
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
-.blue-container p{
-    color: rgba(255, 255, 255, 0.6);
+#no-result-container{
+    text-align: center;
+    width: 100%;
 }
 
+#blue-container p{
+    color: rgba(255, 255, 255, 0.6);
+}
+#blue-container h2{
+    padding-bottom: 15px;
+}
+#blue-container h3{
+    width: 100%;
+}
+
+
+
+/*Design for result card starts hear*/
 .result-card{
     display: flex;
     flex-direction: column;
+    width: 100%;
     padding: 20px;
     background-color: rgb(14, 38, 63);
     border-top:rgb(182, 191, 46) 4px solid;
@@ -175,3 +194,10 @@ button p{
 .result-card h1{
     color: rgb(182, 191, 46);
 }
+
+
+
+
+
+/* Design for larger screens start hear */
+
